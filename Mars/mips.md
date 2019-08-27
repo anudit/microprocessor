@@ -21,7 +21,7 @@ li $t1, 12
 mul $s1, $t1, $t0
 ```
 
-#### Exit Block
+### Exit Block
 ```
 la $v0, 10
 syscall
