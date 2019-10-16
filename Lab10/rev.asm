@@ -1,5 +1,5 @@
 .text
-li	$t0,	203
+li	$t0,	987
 li	$t1,	10
 div 	$t0, $t0, $t1
 mfhi	$t3

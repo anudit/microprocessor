@@ -2,7 +2,7 @@
     tea:	.float 0.2
     burger:	.float 0.5
     pp:		.float 0.6
-    tt:		.asciiz"Total Profit: "
+    tt:		.asciiz "Total Profit: "
 .text
 
 li	$v0,	4
