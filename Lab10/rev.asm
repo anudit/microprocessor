@@ -9,7 +9,7 @@ la $a0, ($t3)
 syscall
 
 
-loop: 
+loop:
 beqz $t0, exit
 
 

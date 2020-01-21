@@ -1,5 +1,5 @@
 .data
-    array1: .space	8 #  declare 40 bytes of storage to hold array of 10 integers
+    array1: .space 40 #  declare 40 bytes of storage to hold array of 10 integers
     br: .asciiz "\n"
     noele: .asciiz "Number of elements are "
     avg: .asciiz "Average of the elements is "
@@ -7,9 +7,9 @@
 .text
 
     la $t0, array1 # array base address
-    li $t1, 2 # number of elements
+    li $t1, 10 # number of elements
     li $t2, 0 # loop start
-    li $t3, 2 # loop end
+    li $t3, 10 # loop end
     li $t4, 0 # sum
 
 	start_loop_1:
@@ -29,7 +29,7 @@
 
     la $t0, array1 # array base address
     li $t2, 0 # loop start
-    li $t3, 2 # loop end
+    li $t3, 10 # loop end
 
     start_loop_2:
   		beq $t2, $t3, end_loop_2
@@ -76,8 +76,8 @@
     syscall
 
     la $t0, array1 # array base address
-    addi $t0, $t0, 4
-    li $t2, 2 # loop start
+    addi $t0, $t0, 36
+    li $t2, 10 # loop start
     start_loop_3:
   		beqz $t2, end_loop_3
   		addi $t2, $t2, -1 # decrement counter
